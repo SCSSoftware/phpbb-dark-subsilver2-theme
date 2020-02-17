@@ -1118,3 +1118,38 @@ li.notification-reported strong, li.notification-disapproved strong {
 	background-color: #A5904C;
 	color: #ffffff;
 }
+
+/* Extensions
+---------------------------------------- */
+
+/* Simple mentions extension */
+
+.tribute-container::-webkit-scrollbar {
+	width: 10px;
+}
+.tribute-container::-webkit-scrollbar-thumb {
+	background-color: #20262e;
+}
+.tribute-container::-webkit-scrollbar-track {
+	background-color: #777;
+}
+
+.tribute-container {
+	border: 1px solid #000000 !important;
+}
+
+.tribute-container ul {
+	background-color: #20262e !important;
+}
+
+.tribute-container li.highlight {
+	background-color: #444c56 !important;
+}
+
+.mention {
+	color: #A5904C !important;
+}
+
+.username-coloured .mention {
+	color: inherit !important;
+}
