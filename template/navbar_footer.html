@@ -21,8 +21,10 @@
 			</span>
 
 			<!-- BEGIN navlinks -->
+				{% set NAVLINK_NAME = navlinks.BREADCRUMB_NAME | default(navlinks.FORUM_NAME) %}
+				{% set NAVLINK_LINK = navlinks.U_BREADCRUMB | default(navlinks.U_VIEW_FORUM) %}
 				<!-- EVENT overall_footer_navlink_prepend -->
-				<span class="crumb" {$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->><a href="{navlinks.U_VIEW_FORUM}" itemprop="url"><span itemprop="title">{navlinks.FORUM_NAME}</span></a></span>
+				<span class="crumb" {$MICRODATA}<!-- IF navlinks.MICRODATA --> {navlinks.MICRODATA}<!-- ENDIF -->><a href="{{ NAVLINK_LINK }}" itemprop="url"><span itemprop="title">{{ NAVLINK_NAME }}</span></a></span>
 				<!-- EVENT overall_footer_navlink_append -->
 			<!-- END navlinks -->
 			{% endspaceless %}

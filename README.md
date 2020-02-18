@@ -1,4 +1,4 @@
-# Dark subsilver2 theme for phpBB 3.2
+# Dark subsilver2 theme for phpBB 3.3
 
 Based on the [Allan Style - SUBSILVER](https://www.phpbb.com/customise/db/style/allan_style_subsilver/) theme.
 
